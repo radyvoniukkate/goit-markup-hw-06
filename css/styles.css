@@ -1261,6 +1261,7 @@ letter-spacing: 0.4px;
   
   .footer .container {
     align-items: baseline;
+    max-width: 1158px;
   }
   
   .footer .text {
@@ -1288,7 +1289,6 @@ letter-spacing: 0.4px;
     transition-property: background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
   
   .footer-form {
     gap:24px;
