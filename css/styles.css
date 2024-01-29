@@ -16,6 +16,7 @@ img {
 }
 
 .header {
+  padding: 17px 0;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -183,10 +184,10 @@ text-transform: capitalize;
   list-style: none;
   gap: 72px;
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  padding: 0 12px;
-  margin: 0;
+  padding: 0;
+  margin: 0 ;
 }
 
 .benefits {
@@ -381,6 +382,11 @@ letter-spacing: 0.4px;
 
 .portfolio-item .card-content .list-title {
   margin-bottom: 8px;
+}
+
+.portfolio-item .picture>.img{
+  max-width: 288px;
+  height: 280px;
 }
 
 .footer {
@@ -775,8 +781,7 @@ fill:#F4F4FD;
   pointer-events: none;
   display: flex;
   flex-direction: column;
-  padding-top: 72px;
-padding-left: 24px;
+  padding: 72px 24px;
 }
 
 .mobile-menu.is-open {
@@ -855,6 +860,9 @@ letter-spacing: 0.4px;
 
 @media (min-width:768px){
 
+  .header{
+    padding: 0;
+  }
 
 .nav-container{
 gap: 120px;
@@ -964,10 +972,10 @@ letter-spacing: 1.12px;
 .team-list {
     row-gap: 64px;
   column-gap: 24px;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 108px;
+  margin: 0;
   padding: 0;
 }
 
@@ -1039,6 +1047,9 @@ align-items: flex-start;
     padding: 0 15px;
   }
   
+  .nav-container{
+    gap: 0;
+  }
   
   .navbar-links .link {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
